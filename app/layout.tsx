@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
-const roboto = Roboto({ 
-  weight: ['300', '400', '500', '700'],
-  subsets: ["latin"], 
-  variable: '--font-roboto' 
-});
 
 export const metadata: Metadata = {
   title: "Kenya Labour Party - Building a Better Kenya for All",
@@ -36,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${roboto.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
