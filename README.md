@@ -1,6 +1,6 @@
 # Kenya Labour Party - Official Website
 
-A modern, responsive landing page for the Kenya Labour Party built with Next.js 14, Tailwind CSS, and GSAP animations.
+A modern, responsive landing page for the Kenya Labour Party built with Next.js 16, Tailwind CSS, and GSAP animations.
 
 ## Features
 
@@ -36,11 +36,11 @@ npm start
 
 ## Technology Stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 16 (App Router)
 - **Styling:** Tailwind CSS
 - **Animations:** GSAP
 - **Language:** TypeScript
-- **Fonts:** Inter & Roboto
+- **Fonts:** System fonts (optimized for performance)
 
 ## Project Structure
 
