@@ -1,23 +1,40 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Manifesto from '@/components/Manifesto';
-import Leadership from '@/components/Leadership';
-import News from '@/components/News';
-import Events from '@/components/Events';
-import Membership from '@/components/Membership';
-import Footer from '@/components/Footer';
+import type { Metadata } from "next";
+import HeroSection from "@/components/home/HeroSection";
+import StatsSection from "@/components/home/StatsSection";
+import AboutSection from "@/components/home/AboutSection";
+import CampaignGallery from "@/components/home/CampaignGallery";
+import ManifestoPreview from "@/components/home/ManifestoPreview";
+import LeadershipCarousel from "@/components/home/LeadershipCarousel";
+import WhyJoinSection from "@/components/home/WhyJoinSection";
+import NewsSection from "@/components/home/NewsSection";
+import EventsSection from "@/components/home/EventsSection";
+import MembershipForm from "@/components/home/MembershipForm";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+import CountyMapTeaser from "@/components/home/CountyMapTeaser";
+import NewsletterSection from "@/components/home/NewsletterSection";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Labour Party of Kenya — Building a Better Kenya",
+  description:
+    "The Labour Party of Kenya champions workers' rights, social justice, and economic empowerment for every Kenyan. Join 50,000+ members building a better Kenya.",
+};
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <Header />
-      <Hero />
-      <Manifesto />
-      <Leadership />
-      <News />
-      <Events />
-      <Membership />
-      <Footer />
-    </main>
+    <div className="overflow-x-hidden">
+      <HeroSection />
+      <StatsSection />
+      <AboutSection />
+      <CampaignGallery />
+      <ManifestoPreview />
+      <LeadershipCarousel />
+      <WhyJoinSection />
+      <NewsSection />
+      <EventsSection />
+      <MembershipForm />
+      <TestimonialsSection />
+      <CountyMapTeaser />
+      <NewsletterSection />
+    </div>
   );
 }

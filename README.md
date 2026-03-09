@@ -1,6 +1,6 @@
-# Kenya Labour Party - Official Website
+# Labour Party of Kenya - Official Website
 
-A modern, responsive landing page for the Kenya Labour Party built with Next.js 16, Tailwind CSS, and GSAP animations.
+A modern, responsive landing page for the Labour Party of Kenya built with Next.js 16, Tailwind CSS, and GSAP animations.
 
 ## Features
 
@@ -64,4 +64,4 @@ labour/
 
 ## License
 
-© 2026 Kenya Labour Party. All rights reserved.
+© 2026 Labour Party of Kenya. All rights reserved.
