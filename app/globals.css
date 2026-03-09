@@ -10,6 +10,7 @@
   --klp-gold: #f59e0b;
   --foreground-rgb: 17, 24, 39;
   --background-rgb: 255, 255, 255;
+  --font-playfair: 'Playfair Display', Georgia, serif;
 }
 
 * {

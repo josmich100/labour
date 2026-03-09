@@ -1,14 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import ClientLayout from "@/components/layout/ClientLayout";
 import "./globals.css";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -49,15 +42,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${playfair.variable}`}>
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,800,900&display=swap"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        />
       </head>
-      <body className={`antialiased ${playfair.variable}`}>
+      <body className="antialiased" style={{ fontFamily: 'var(--font-satoshi, sans-serif)' }}>
         <ClientLayout>{children}</ClientLayout>
         <Toaster
           position="top-right"

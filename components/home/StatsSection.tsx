@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const STATS = [
-  { value: 46500, suffix: "+", label: "Party Members", prefix: "" },
+  // { value: 46500, suffix: "+", label: "Party Members", prefix: "" },
   { value: 27, suffix: "", label: "County Chapters", prefix: "" },
   { value: 290, suffix: "+", label: "Constituencies", prefix: "" },
-  { value: 1998, suffix: "", label: "Founded", prefix: "" },
+  // { value: 1998, suffix: "", label: "Founded", prefix: "" },
   { value: 2012, suffix: "", label: "Registered", prefix: "" },
   { value: 10, suffix: "", label: "Strategic Directions", prefix: "" },
 ];

@@ -4,12 +4,7 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 
-const STATS = [
-  { value: '46,500+', label: 'Members' },
-  { value: '27', label: 'Counties' },
-  { value: '1998', label: 'Founded' },
-  { value: 'SI', label: 'Global Affiliate' },
-];
+
 
 export default function Hero() {
   const heroRef     = useRef<HTMLDivElement>(null);
@@ -95,13 +90,13 @@ export default function Hero() {
 
             {/* Headline */}
             <div className="mb-7 overflow-hidden">
-              <div ref={line1Ref} className="text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tight">
+              <div ref={line1Ref} className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.2] tracking-tight">
                 Haki
               </div>
-              <div ref={line2Ref} className="text-6xl md:text-7xl lg:text-8xl font-black text-red-600 leading-[0.9] tracking-tight">
+              <div ref={line2Ref} className="text-5xl md:text-6xl lg:text-7xl font-black text-red-600 leading-[1.2] tracking-tight">
                 Na Usawa
               </div>
-              <div ref={line3Ref} className="text-6xl md:text-7xl lg:text-8xl font-black text-[#8fbb44] leading-[0.9] tracking-tight">
+              <div ref={line3Ref} className="text-5xl md:text-6xl lg:text-7xl font-black text-[#8fbb44] tracking-tight">
                 Kenya.
               </div>
             </div>
@@ -135,7 +130,7 @@ export default function Hero() {
             </div>
 
             {/* Stats row */}
-            <div ref={statsRef} className="flex flex-wrap gap-6 pt-8 border-t border-white/[0.07]">
+            {/* <div ref={statsRef} className="flex flex-wrap gap-6 pt-8 border-t border-white/[0.07]">
               {STATS.map((s, i) => (
                 <div key={i} className="group">
                   <div className="text-2xl font-black text-white group-hover:text-red-500 transition-colors duration-300 leading-none">
@@ -146,7 +141,7 @@ export default function Hero() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* ── RIGHT: Image panel ──────────────────────── */}

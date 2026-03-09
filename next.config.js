@@ -2,6 +2,12 @@
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
+  transpilePackages: ['react-simple-maps'],
+  turbopack: {
+    resolveAlias: {
+      'react-simple-maps': './node_modules/react-simple-maps/dist/index.es.js',
+    },
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const KenyaPresenceMap = dynamic(() => import('../KenyaPresenceMap'), { ssr: false });
 
 // City coordinates as % of SVG viewBox (simplified Kenya map bounding box)
 const CITIES = [
@@ -22,6 +25,8 @@ const CITIES = [
   { name: "Lodwar", x: 28, y: 22, size: 3, label: "Turkana" },
   { name: "Mandera", x: 82, y: 18, size: 3, label: "Mandera" },
 ];
+
+
 
 export default function CountyMapTeaser() {
   return (
@@ -83,57 +88,7 @@ export default function CountyMapTeaser() {
             className="relative"
           >
             <div className="relative bg-gray-900 rounded-3xl p-6 shadow-2xl border border-gray-800">
-              <svg
-                viewBox="0 0 100 100"
-                className="w-full"
-                style={{ maxHeight: "420px" }}
-              >
-                {/* Simplified Kenya silhouette */}
-                <path
-                  d="M 30 15 L 45 12 L 55 10 L 70 12 L 82 18 L 85 30 L 82 40 L 88 52 L 80 65 L 72 78 L 62 85 L 52 88 L 44 85 L 38 78 L 30 72 L 20 65 L 18 55 L 22 45 L 18 35 L 22 25 Z"
-                  fill="none"
-                  stroke="#374151"
-                  strokeWidth="1.5"
-                  strokeDasharray="2 1"
-                />
-                <path
-                  d="M 30 15 L 45 12 L 55 10 L 70 12 L 82 18 L 85 30 L 82 40 L 88 52 L 80 65 L 72 78 L 62 85 L 52 88 L 44 85 L 38 78 L 30 72 L 20 65 L 18 55 L 22 45 L 18 35 L 22 25 Z"
-                  fill="rgba(220,38,38,0.05)"
-                />
-                {/* Dots for cities */}
-                {CITIES.map((city) => (
-                  <g key={city.name}>
-                    {/* Pulse ring */}
-                    <circle
-                      cx={city.x}
-                      cy={city.y}
-                      r={city.size * 1.5}
-                      fill="rgba(220,38,38,0.15)"
-                      className="origin-center animate-ping"
-                      style={{ animationDuration: `${2 + Math.random()}s` }}
-                    />
-                    {/* Dot */}
-                    <circle
-                      cx={city.x}
-                      cy={city.y}
-                      r={city.size / 2}
-                      fill="#dc2626"
-                    />
-                    {/* Label */}
-                    {city.size >= 5 && (
-                      <text
-                        x={city.x}
-                        y={city.y - city.size / 2 - 1.5}
-                        textAnchor="middle"
-                        fontSize="2.8"
-                        fill="#9ca3af"
-                      >
-                        {city.label}
-                      </text>
-                    )}
-                  </g>
-                ))}
-              </svg>
+              <KenyaPresenceMap />
               <p className="text-center text-gray-500 text-xs mt-3">47 County Chapters — Active Nationwide</p>
             </div>
           </motion.div>

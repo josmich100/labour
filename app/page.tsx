@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import HeroSection from "@/components/home/HeroSection";
 import StatsSection from "@/components/home/StatsSection";
 import AboutSection from "@/components/home/AboutSection";
 import CampaignGallery from "@/components/home/CampaignGallery";
@@ -12,6 +11,7 @@ import MembershipForm from "@/components/home/MembershipForm";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CountyMapTeaser from "@/components/home/CountyMapTeaser";
 import NewsletterSection from "@/components/home/NewsletterSection";
+import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Labour Party of Kenya — Building a Better Kenya",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="overflow-x-hidden">
-      <HeroSection />
+      <Hero />
       <StatsSection />
       <AboutSection />
       <CampaignGallery />
