@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const STATS = [
-  // { value: 46500, suffix: "+", label: "Party Members", prefix: "" },
+  { value: 46500, suffix: "+", label: "Party Members", prefix: "" },
   { value: 27, suffix: "", label: "County Chapters", prefix: "" },
   { value: 290, suffix: "+", label: "Constituencies", prefix: "" },
-  // { value: 1998, suffix: "", label: "Founded", prefix: "" },
+  { value: 1998, suffix: "", label: "Founded", prefix: "" },
   { value: 2012, suffix: "", label: "Registered", prefix: "" },
   { value: 10, suffix: "", label: "Strategic Directions", prefix: "" },
 ];
@@ -34,7 +34,7 @@ function useCountUp(end: number, duration: number = 2000, started: boolean = fal
 
 function StatItem({ stat, started }: { stat: typeof STATS[0]; started: boolean }) {
   const count = useCountUp(stat.value, 2200, started);
-  const display = stat.value >= 1000 ? count.toLocaleString() : count;
+  const display = stat.value >= 5000 ? count.toLocaleString() : count;
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

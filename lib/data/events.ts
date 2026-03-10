@@ -29,8 +29,10 @@ export const EVENTS: EventItem[] = [
     city: "Nairobi",
     county: "Nairobi",
     category: "Convention",
-    description: "The flagship annual gathering of Labour Party of Kenya members, trade union leaders, civil society representatives, and workers from across the country. This year's theme is 'Dignity at Work: Building Kenya's Future Together'. Expect keynote speeches, policy workshops, and the announcement of LPK's 2026 action plan.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200",
+    description:
+      "The flagship annual gathering of Labour Party of Kenya members, trade union leaders, civil society representatives, and workers from across the country. This year's theme is 'Dignity at Work: Building Kenya's Future Together'. Expect keynote speeches, policy workshops, and the announcement of LPK's 2026 action plan.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 3000,
     registered: 2450,
     isPast: false,
@@ -46,8 +48,10 @@ export const EVENTS: EventItem[] = [
     city: "Mombasa",
     county: "Mombasa",
     category: "Summit",
-    description: "The second annual LPK Youth Leadership Summit brings together over 2,000 young Kenyans aged 18-35 from across the country. Themed 'Young Voices, Bold Kenya', the summit features mentorship sessions, entrepreneurship clinics, and a youth manifesto drafting workshop.",
-    image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1200",
+    description:
+      "The second annual LPK Youth Leadership Summit brings together over 2,000 young Kenyans aged 18-35 from across the country. Themed 'Young Voices, Bold Kenya', the summit features mentorship sessions, entrepreneurship clinics, and a youth manifesto drafting workshop.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 2000,
     registered: 1850,
     isPast: false,
@@ -63,8 +67,10 @@ export const EVENTS: EventItem[] = [
     city: "Kisumu",
     county: "Kisumu",
     category: "Town Hall",
-    description: "Part of LPK's nationwide 'LPK Listens' consultation exercise. Residents of Kisumu and surrounding areas are invited to engage directly with party leadership on issues of local importance including the revival of the Kisumu Port, healthcare access, and youth unemployment.",
-    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1200",
+    description:
+      "Part of LPK's nationwide 'LPK Listens' consultation exercise. Residents of Kisumu and surrounding areas are invited to engage directly with party leadership on issues of local importance including the revival of the Kisumu Port, healthcare access, and youth unemployment.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 500,
     registered: 320,
     isPast: false,
@@ -80,8 +86,10 @@ export const EVENTS: EventItem[] = [
     city: "Nakuru",
     county: "Nakuru",
     category: "Forum",
-    description: "The third annual Women in Leadership Forum spotlights the achievements of women in public office, business, and community leadership across Kenya. Featuring panel discussions, networking, and the launch of LPK's Women in Leadership mentorship programme.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200",
+    description:
+      "The third annual Women in Leadership Forum spotlights the achievements of women in public office, business, and community leadership across Kenya. Featuring panel discussions, networking, and the launch of LPK's Women in Leadership mentorship programme.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 800,
     registered: 620,
     isPast: false,
@@ -97,8 +105,10 @@ export const EVENTS: EventItem[] = [
     city: "Nairobi",
     county: "Nairobi",
     category: "Convention",
-    description: "A historic celebration of LPK's milestone of 50,000 registered members. All members are welcome. Features cultural performances, policy workshops, a gala dinner, and the launch of LPK's 2026–2031 Strategic Plan.",
-    image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1200",
+    description:
+      "A historic celebration of LPK's milestone of 50,000 registered members. All members are welcome. Features cultural performances, policy workshops, a gala dinner, and the launch of LPK's 2026–2031 Strategic Plan.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 10000,
     registered: 7800,
     isPast: false,
@@ -114,8 +124,10 @@ export const EVENTS: EventItem[] = [
     city: "Eldoret",
     county: "Uasin Gishu",
     category: "Forum",
-    description: "LPK Agricultural Policy Unit convenes farmers from the Rift Valley region to discuss the implementation of the Smallholder Support Programme, input costs, and market access challenges.",
-    image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200",
+    description:
+      "LPK Agricultural Policy Unit convenes farmers from the Rift Valley region to discuss the implementation of the Smallholder Support Programme, input costs, and market access challenges.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 600,
     registered: 380,
     isPast: false,
@@ -131,8 +143,10 @@ export const EVENTS: EventItem[] = [
     city: "Nairobi",
     county: "Nairobi",
     category: "Public Hearing",
-    description: "Public participation forum on the Workers Protection Bill 2026. Over 800 workers, employers, and unions attended to give their views to the Labour Committee.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+    description:
+      "Public participation forum on the Workers Protection Bill 2026. Over 800 workers, employers, and unions attended to give their views to the Labour Committee.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 800,
     registered: 800,
     isPast: true,
@@ -148,8 +162,10 @@ export const EVENTS: EventItem[] = [
     city: "Nairobi",
     county: "Nairobi",
     category: "Gala",
-    description: "Annual awards night recognising outstanding members, county coordinators, and allies. The 2025 edition also marked LPK's 31st year of advocacy.",
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200",
+    description:
+      "Annual awards night recognising outstanding members, county coordinators, and allies. The 2025 edition also marked LPK's 31st year of advocacy.",
+    image:
+      "https://res.cloudinary.com/dpk27rbno/image/upload/v1773081473/six_jff93h.jpg",
     capacity: 400,
     registered: 400,
     isPast: true,
