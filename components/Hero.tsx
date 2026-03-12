@@ -223,8 +223,8 @@ export default function Hero() {
         </AnimatePresence>
 
         <div className="absolute inset-0 bg-[#071017]/72" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,16,23,0.96)_0%,rgba(7,16,23,0.82)_44%,rgba(7,16,23,0.68)_66%,rgba(7,16,23,0.9)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(220,38,38,0.34),transparent_28%),radial-gradient(circle_at_82%_28%,rgba(143,187,68,0.26),transparent_24%),radial-gradient(circle_at_50%_92%,rgba(255,255,255,0.1),transparent_18%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,16,23,0.76)_0%,rgba(7,16,23,0.52)_44%,rgba(7,16,23,0.48)_66%,rgba(7,16,23,0.9)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(220,38,38,0.24),transparent_28%),radial-gradient(circle_at_82%_28%,rgba(143,187,68,0.16),transparent_24%),radial-gradient(circle_at_50%_92%,rgba(255,255,255,0.1),transparent_18%)]" />
       </div>
 
       <div className="pointer-events-none absolute -left-24 top-20 h-[26rem] w-[26rem] rounded-full bg-red-500/30 blur-[150px]" />
